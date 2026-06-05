@@ -1,5 +1,4 @@
 title: Predicting High-Impact Power Outages
-description: A DSC 80 final project report by David Yang
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
