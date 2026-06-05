@@ -95,6 +95,8 @@ I tested whether severe-weather outages affect more customers than non-severe-we
 
 I rejected the null hypothesis. This suggests severe-weather outages tend to affect more customers in this dataset, though the test does not prove a causal relationship.
 
+<iframe src="assets/hypothesis_test.html" width="100%" height="520" frameborder="0"></iframe>
+
 ## Framing a Prediction Problem
 
 The prediction task is **binary classification**: predict `HIGH_IMPACT`, where an outage is high-impact if `CUSTOMERS.AFFECTED` is above the median observed customer impact of 70,135 customers.
@@ -140,3 +142,5 @@ I compared accuracy for Group X, outages during `warm` climate periods, against 
 | Result | Observed absolute difference: about 0.085. Permutation test p-value: about 0.2312. |
 
 Because the p-value is larger than 0.05, I failed to reject the null hypothesis. I did not find strong evidence that the final model is unfair between warm and non-warm climate-category outages using accuracy parity.
+
+<iframe src="assets/fairness_test.html" width="100%" height="520" frameborder="0"></iframe>
